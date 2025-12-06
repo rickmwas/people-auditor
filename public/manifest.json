@@ -1,0 +1,28 @@
+{
+  "name": "People's Auditor - Kenya's Public Finance Watchdog",
+  "short_name": "People's Auditor",
+  "description": "Kenya's public finance watchdog. Tracking national debt, county budgets, and corruption exposés.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#DE2910",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["news", "finance", "government"],
+  "lang": "en-KE",
+  "dir": "ltr"
+}
+
