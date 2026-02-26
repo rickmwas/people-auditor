@@ -1,7 +1,7 @@
 // Placeholder data for counties, exposes, and national metrics
 
 export const nationalMetrics = {
-  debt: 11500000000000, // KSh 11.5 Trillion
+  debt: 12300000000000, // KSh 12.3 Trillion
   debtLastUpdated: new Date('2025-12-01'),
   budget2024: 3500000000000, // KSh 3.5 Trillion
   gdp: 115000000000000, // KSh 115 Trillion
