@@ -1,4 +1,4 @@
-"use client";
+
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -94,7 +94,7 @@ export function NewsletterSignup() {
             <Input
               id="newsletter-email"
               type="email"
-              placeholder="your.email@example.com"
+              placeholder="your-email@example.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
