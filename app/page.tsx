@@ -5,17 +5,8 @@ import Link from "next/link";
 import { ArrowRight, TrendingUp, AlertTriangle, MapPin, FileText } from "lucide-react";
 import { formatCurrency, formatNumber } from "@/lib/utils";
 import { nationalMetrics } from "@/lib/data/placeholder";
-import dynamic from "next/dynamic";
-
-// Lazy load heavy components for better initial page load
-const TaxBurdenCalculator = dynamic(() => import("@/components/tax-burden-calculator").then(mod => ({ default: mod.TaxBurdenCalculator })), {
-  loading: () => <div className="min-h-[400px] flex items-center justify-center"><p className="text-muted-foreground">Loading calculator...</p></div>,
-  ssr: false,
-});
-
-const NewsletterSignup = dynamic(() => import("@/components/newsletter-signup").then(mod => ({ default: mod.NewsletterSignup })), {
-  loading: () => <div className="min-h-[200px] flex items-center justify-center"><p className="text-muted-foreground">Loading...</p></div>,
-});
+import { NewsletterSignup } from "@/components/newsletter-signup";
+import { TaxBurdenCalculatorClient } from "@/components/tax-burden-calculator-client";
 
 export default function HomePage() {
   return (
@@ -96,7 +87,7 @@ export default function HomePage() {
 
       {/* Tax Burden Calculator */}
       <section className="max-w-3xl mx-auto">
-        <TaxBurdenCalculator />
+        <TaxBurdenCalculatorClient />
       </section>
 
       {/* Quick Links */}

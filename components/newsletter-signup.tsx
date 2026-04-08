@@ -1,4 +1,4 @@
-
+"use client";
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -22,9 +22,7 @@ export function NewsletterSignup() {
     try {
       const response = await fetch("/api/newsletter", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, name }),
       });
 
@@ -108,4 +106,3 @@ export function NewsletterSignup() {
     </Card>
   );
 }
-
